@@ -11,6 +11,7 @@ http
 const discord = require("discord.js");
 const client = new discord.Client();
 
+
 client.on("ready", message => {
   console.log("bot is ready!");
 });
@@ -24,9 +25,8 @@ client.on("message", message => {
 
 client.on("message", msg => {
   if (msg.content === "inc") {
-    client.connection.play(
-      "https://www.dropbox.com/s/dr8b9isqz1cdqwx/%E5%A5%B3%E6%80%A7%E3%81%8C%E6%AD%8C%E3%81%86%E6%9C%89%E5%BF%83%E8%AB%96RADWIMPS%28Covered%20by%20%E3%82%B3%E3%83%90%E3%82%BD%E3%83%AD%20%20Lefty%20Hand%20Cream%29%20%28mp3cut.net%29.mp3?dl=0"
-    );
+    const dispatcher = msg.member.voice.channel.join().play('https://www.dropbox.com/s/dr8b9isqz1cdqwx/%E5%A5%B3%E6%80%A7%E3%81%8C%E6%AD%8C%E3%81%86%E6%9C%89%E5%BF%83%E8%AB%96RADWIMPS%28Covered%20by%20%E3%82%B3%E3%83%90%E3%82%BD%E3%83%AD%20%20Lefty%20Hand%20Cream%29%20%28mp3cut.net%29.mp3?dl=0');
+    dispatcher;
   }
   return;
 });
