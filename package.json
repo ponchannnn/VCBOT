@@ -2,9 +2,10 @@
   "name": "glitch-discord-bot",
   "version": "0.0.0",
   "description": "discord bot sample on Glitch",
-  "main": "src/main.js",
+  "main": "main.js",
   "dependencies": {
-    "discord.js": "latest"
+    "discord.js": "^12.5.1",
+    "ffmpeg-static": "^4.2.7"
   },
   "devDependencies": {},
   "scripts": {
